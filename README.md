@@ -19,3 +19,21 @@
 For more information, see the [contributor guide index](https://github.com/Azure/azure-content/blob/master/contributor-guide/contributor-guide-index.md)
 
 Отправила файл на удаленный репозитарий
+
+Комментарии
+Документация поддерживает комментарии HTML, если необходимо закомментировать разделы статьи:
+<!--- Here's my comment --->
+
+Изображения
+Для изображений по умолчанию поддерживаются следующие типы файлов:
+
+.jpg
+.png
+Чтобы было возможно использовать другие типы изображений, например .gif, их необходимо добавить в качестве ресурсов в docfx.json:
+"resource": [
+  {
+    "files" : [
+      "**/*.png",
+      "**/*.jpg,
+      "**/*.gif"
+    ],
